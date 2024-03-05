@@ -16,8 +16,8 @@
     --primary: 165.88 100% 93.33%;
     --primary-foreground: 223.38 100% 38.24%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 223.38 100% 38.24%;
+    --secondary-foreground: 165 100% 47%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -28,7 +28,7 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
+    --border: 0 0% 74%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 

@@ -21,3 +21,95 @@ export const newsObject = [
     isFeatured: false,
   },
 ];
+
+export const footerObject = [
+  {
+    title: "EVFY",
+    children: [
+      {
+        title: "Home",
+        link: "/",
+      },
+      {
+        title: "About EVFY",
+        link: "/about",
+      },
+      {
+        title: "Contact Us",
+        link: "/contact",
+      },
+      {
+        title: "FAQ",
+        link: "/faq",
+      },
+    ],
+  },
+  {
+    title: "EV Cards",
+    children: [
+      {
+        title: "EV Brands",
+        link: "/",
+      },
+      {
+        title: "Car Types",
+        link: "/",
+      },
+      {
+        title: "EV Types",
+        link: "/",
+      },
+    ],
+  },
+  {
+    title: "News & Guides",
+    children: [
+      {
+        title: "Top News",
+        link: "/",
+      },
+      {
+        title: "EV Guides",
+        link: "/",
+      },
+    ],
+  },
+  {
+    title: "Terms",
+    children: [
+      {
+        title: "Cookies",
+        link: "/",
+      },
+      {
+        title: "Privacy",
+        link: "/",
+      },
+      {
+        title: "Legal",
+        link: "/",
+      },
+    ],
+  },
+  {
+    title: "Social",
+    children: [
+      {
+        title: "Facebook",
+        link: "/",
+      },
+      {
+        title: "LinkedIn",
+        link: "/",
+      },
+      {
+        title: "Instagram",
+        link: "/",
+      },
+      {
+        title: "Twitter",
+        link: "/",
+      },
+    ],
+  },
+];

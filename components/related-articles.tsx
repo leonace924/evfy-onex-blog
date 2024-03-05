@@ -1,8 +1,10 @@
 import Image from "next/image";
+import { ArrowRightIcon } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { newsObject } from "@/config/constant";
+import { Button } from "./ui/button";
 
 export const RelatedArticles = () => {
   return (
@@ -16,7 +18,7 @@ export const RelatedArticles = () => {
           <div
             key={index}
             className={cn("grid grid-cols-[auto__1fr] gap-6 items-center", {
-              "pb-8 border-b-[0.5px] border-b-gray-200":
+              "pb-8 border-b-[0.5px] border-b-border":
                 index < newsObject.length - 1,
             })}
           >
@@ -45,6 +47,14 @@ export const RelatedArticles = () => {
           </div>
         ))}
       </div>
+
+      <Button
+        variant="link"
+        className="font-normal text-primary-foreground p-0 mt-10"
+      >
+        View more{" "}
+        <ArrowRightIcon className="w-4 h-4 ml-2 stroke-primary-foreground" />
+      </Button>
     </div>
   );
 };

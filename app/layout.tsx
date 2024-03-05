@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import localFont from "next/font/local";
 import { SiteHeader } from "@/components/site-header";
+import { SiteFooter } from "@/components/site-footer";
 
 export const metadata: Metadata = {
   title: {
@@ -74,6 +75,7 @@ export default function RootLayout({
       <body className={graphik.className}>
         <SiteHeader />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
