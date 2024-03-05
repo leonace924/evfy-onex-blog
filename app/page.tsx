@@ -23,6 +23,7 @@ export default function NewsDetail() {
             placeholder="blur"
             blurDataURL="/images/img-blog-featured.jpg"
             className="w-full rounded"
+            priority
           />
           <div className="mt-4">
             <span>
