@@ -1,12 +1,17 @@
+import * as React from "react";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { LanguageSelect } from "./language-select";
 import { footerObject } from "@/config/constant";
+import { cn } from "@/lib/utils";
 
-export const SiteFooter = () => {
+export const SiteFooter = ({
+  className,
+}: React.HTMLAttributes<HTMLElement>) => {
   return (
-    <footer className="container pt-[113px]">
+    <footer className={cn(className, "container pt-[113px]")}>
       <div className="mb-16 lg:mb-24 grid grid-cols-1 lg:grid-cols-12 lg:gap-6">
         <div className="lg:col-start-1 lg:col-span-3">
           <Link href="/">

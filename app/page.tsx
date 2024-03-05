@@ -6,13 +6,15 @@ import { RecommendedArticles } from "@/components/recommended-articles";
 export default function NewsDetail() {
   return (
     <main className="min-h-screen">
-      <div className="container grid grid-cols-1 gap-20 lg:grid-cols-12 lg:gap-6 pb-20">
+      <div className="container grid grid-cols-1 gap-20 lg:grid-cols-12 lg:gap-x-6 lg:gap-y-0 pb-20">
         <div className="lg:col-span-8 lg:col-start-1 max-w-[752px]">
           <Breadcrumb />
           <h1 className="text-5xl text-foreground font-semibold mb-12">
             Biden sets electric vehicle target in drive to cut emissions
           </h1>
+        </div>
 
+        <div className="lg:col-span-8 lg:col-start-1 max-w-[752px]">
           <Image
             src="/images/img-blog-featured.jpg"
             alt="Blog Featured"

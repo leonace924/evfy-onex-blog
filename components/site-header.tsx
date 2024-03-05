@@ -14,7 +14,7 @@ import { Icons } from "./icons";
 
 export const SiteHeader = () => {
   return (
-    <div className="container py-5 flex items-center gap-4 lg:gap-8">
+    <div className="container py-3 flex items-center gap-4 lg:gap-8">
       <Link href="/">
         <Image
           src="/logo.svg"

@@ -1,14 +1,14 @@
 import Image from "next/image";
 import { ArrowRightIcon } from "lucide-react";
 
+import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import { newsObject } from "@/config/constant";
-import { Button } from "./ui/button";
 
 export const RelatedArticles = () => {
   return (
-    <div>
+    <div className="sticky top-48">
       <h3 className="text-xl leading-tight font-semibold mb-6">
         Related Articles
       </h3>

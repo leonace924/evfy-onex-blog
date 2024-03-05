@@ -1,7 +1,5 @@
-import Image from "next/image";
-
+import { ArticleItem } from "./article-item";
 import { newsObject } from "@/config/constant";
-import { cn } from "@/lib/utils";
 
 export const RecommendedArticles = () => {
   return (
@@ -13,19 +11,7 @@ export const RecommendedArticles = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {newsObject.map((news, index) => (
-            <div key={index}>
-              <div className=" relative rounded overflow-hidden mb-8 aspect-[1.71]">
-                <Image src={news.featuredImage} alt="news-image" fill />
-              </div>
-              <div className="gap-2">
-                <h4 className="text-base font-medium leading-5 mb-2 line-clamp-1">
-                  {news.title}
-                </h4>
-                <p className="text-sm leading-5 line-clamp-2">
-                  {news.description}
-                </p>
-              </div>
-            </div>
+            <ArticleItem article={news} key={index} />
           ))}
         </div>
       </div>
