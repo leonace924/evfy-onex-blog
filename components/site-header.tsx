@@ -9,9 +9,8 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import { Button } from "@/components/ui/button";
-import { IconEnum } from "@/components/icons/icon-enum";
-import { Icon } from "@/components/icons/Icon";
 import { LanguageSelect } from "@/components/language-select";
+import { Icons } from "./icons";
 
 export const SiteHeader = () => {
   return (
@@ -30,7 +29,7 @@ export const SiteHeader = () => {
         <MenubarMenu>
           <MenubarTrigger className="text-text-main flex items-center gap-2 text-base font-semibold">
             Find EV Cars
-            <Icon icon={IconEnum.ChevronDown} />
+            <Icons.arrowDown />
           </MenubarTrigger>
           <MenubarContent>
             <MenubarItem>Menu 1</MenubarItem>
@@ -40,7 +39,7 @@ export const SiteHeader = () => {
         <MenubarMenu>
           <MenubarTrigger className="text-text-main flex items-center gap-2 text-base font-semibold">
             EV Guides
-            <Icon icon={IconEnum.ChevronDown} />
+            <Icons.arrowDown />
           </MenubarTrigger>
           <MenubarContent>
             <MenubarItem>Menu 1</MenubarItem>

@@ -1,10 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 
-import Icon from "@/components/icons/Icon";
-import { IconEnum } from "@/components/icons/icon-enum";
 import { Button } from "@/components/ui/button";
 import {
   Command,
@@ -17,6 +15,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { Icons } from "./icons";
 
 type Language = {
   name: string;
@@ -65,7 +64,7 @@ export const LanguageSelect = () => {
               alt="icon"
             />
           )}
-          <Icon icon={IconEnum.ChevronDown} />
+          <Icons.arrowDown />
         </Button>
       </PopoverTrigger>
       <PopoverContent className="p-0" side="bottom" align="start">
