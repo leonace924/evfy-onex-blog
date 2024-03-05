@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { Breadcrumb } from "@/components/breadcrumb";
 import { RelatedArticles } from "@/components/related-articles";
+import { RecommendedArticles } from "@/components/recommended-articles";
 
 export default function NewsDetail() {
   return (
-    <main className="min-h-screen container">
-      <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="col-span-8 col-start-1 max-w-[752px]">
+    <main className="min-h-screen">
+      <div className="container grid grid-cols-1 gap-20 lg:grid-cols-12 lg:gap-6 pb-20">
+        <div className="lg:col-span-8 lg:col-start-1 max-w-[752px]">
           <Breadcrumb />
           <h1 className="text-5xl text-foreground font-semibold mb-12">
             Biden sets electric vehicle target in drive to cut emissions
@@ -19,7 +20,7 @@ export default function NewsDetail() {
             height={387}
             placeholder="blur"
             blurDataURL="/images/img-blog-featured.jpg"
-            className="w-full"
+            className="w-full rounded"
           />
           <div className="mt-4">
             <span>
@@ -52,10 +53,12 @@ export default function NewsDetail() {
           </p>
         </div>
 
-        <div className="col-span-4 col-start-9">
+        <div className="lg:col-span-4 lg:col-start-9">
           <RelatedArticles />
         </div>
       </div>
+
+      <RecommendedArticles />
     </main>
   );
 }

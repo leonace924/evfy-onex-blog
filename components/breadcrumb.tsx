@@ -18,10 +18,9 @@ export const Breadcrumb = () => {
               clipRule="evenodd"
             />
           </svg>
-          rgba(0, 54, 195, 1)
         </li>
         <li className="flex items-center">
-          <span>Products</span>
+          <span>September 21, 2021</span>
         </li>
       </ol>
     </nav>
